@@ -12,7 +12,7 @@
 
 - (void)determineScrollingAbility
 {
-	self.scrollEnabled = self.contentSize.height > self.frame.size.height || self.contentSize.width > self.frame.size.width;
+	self.scrollEnabled = self.contentSize.height > (self.frame.size.height - 50) || self.contentSize.width > self.frame.size.width;
 }
 
 @end
